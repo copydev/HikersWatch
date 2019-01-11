@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="false"
+        android:alpha="100"
+        android:background="#111c2e"
+        android:fadeScrollbars="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/naturepic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="24dp"
+        android:background="#8919b0d6"
+        android:text="Hiker's Watch"
+        android:textColor="#35085b"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/latTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="111dp"
+        android:text="Latitude: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/longTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latTextView"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:text="Longitude: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/accTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longTextView"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:text="Accuracy: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/altTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accTextView"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:text="Altitude: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/altTextView"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:text="Address:"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
